@@ -34,7 +34,7 @@ export default async function Home() {
               popularity={movie.popularity}
             />
           ))}
-        hello
+        
       </div>
     </main>
   );

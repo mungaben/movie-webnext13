@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 export default async function MovieDetail({ params }) {
-  console.log(params);
+
   const { movie } = params;
   const imagepath = "https://image.tmdb.org/t/p/w500/";
   const res = await fetch(
@@ -14,7 +14,7 @@ export default async function MovieDetail({ params }) {
   );
 
   const data = await res.json();
-  console.log(data);
+  
 
   return (
     <div>
